@@ -38,8 +38,10 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
   <?php require_once 'header.php';?>
+  <div class="wrapper">
   <div class="topnav">
     <input type="text" placeholder="Search..">
+  </div>
   </div>
   <?php require_once 'footer.php';?>
 </body>
