@@ -12,9 +12,9 @@
   </header>
   <main>
     <?php require_once 'header.php' ?>
-    <div class="wrapper">
-      <article id="payment">
-        <h2>Betaling afronden</h2>
+    <article id="payment">
+      <h2>Betaling afronden</h2>
+      <div class="wrapper">
         <span>Selecteer de manier waarop u de bestelling wilt betalen.</span>
         <div class="side-by-side">
           <div>
