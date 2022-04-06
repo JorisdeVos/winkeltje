@@ -9,7 +9,7 @@
 	    <ul class="menu__box">
 	      <li><a class="menu__item" href="index.php">Home</a></li>
 	      <li><a class="menu__item" href="payment.php">payment</a></li>
-	      <li><a class="menu__item" href="#">west</a></li>
+	      <li><a class="menu__item" href="details.php">Product details</a></li>
 	      <li><a class="menu__item" href="#">nest</a></li>
 	      <li><a class="menu__item" href="#">rest</a></li>
 	    </ul>

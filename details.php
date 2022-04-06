@@ -7,6 +7,7 @@
 	<title>Document</title>
 </head>
 <body>
+	<?php require_once 'header.php';?>
 	<main>
 		<div class="topImage">
 			<p>Product Lorem.</p>
@@ -21,5 +22,6 @@
 			<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quidem assumenda debitis unde iusto culpa quae soluta, dignissimos vel corrupti iure repudiandae delectus, exercitationem illo nesciunt necessitatibus ipsam provident minima sint?</p>
 		</div>
 	</main>
+	<?php require_once 'footer.php';?>
 </body>
 </html>
