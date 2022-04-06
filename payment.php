@@ -42,11 +42,7 @@
     </div>
   </main>
   <footer>
-    <div class="wrapper">
-      <div class="copyright">
-        &copy; ik
-      </div>
-    </div>
+    <?php require_once 'footer.php' ?>
   </footer>
 </body>
 </html>
