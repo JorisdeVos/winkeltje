@@ -39,9 +39,23 @@
 
   <?php require_once 'header.php';?>
   <div class="wrapper">
-  <div class="topnav">
-    <input type="text" placeholder="Search..">
-  </div>
+    <div class="topnav">
+      <input type="text" placeholder="Search..">
+    </div>
+    <div class="bigimg"><img src="img/5464.jpg" /> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellat aliquid cumque accusantium et perferendis quas illo porro explicabo, architecto quisquam fugiat omnis odit deleniti eius dolor? Illum, reiciendis unde? </p></div>
+    
+    <div class="shovelflex2">
+      <div class="shovelflex1"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></div>
+      <div class="shovelflex1"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></div>
+      <div class="shovelflex1"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></div>
+    </div>
+
+    <div class="shovelflex2">
+      <div class="shovelflex1"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></div>
+      <div class="shovelflex1"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></div>
+      <div class="shovelflex1"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></div>
+    </div>
+
   </div>
   <?php require_once 'footer.php';?>
 </body>
