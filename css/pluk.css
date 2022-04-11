@@ -99,12 +99,12 @@ textarea {
 }
 
 .topImage{
-    background-image: url("../img/tzLeyS7mVfOq0lYfKC0iAkCVdPA.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-transform: uppercase;
-    padding-top: 125px;
+  background-image: url("../img/tzLeyS7mVfOq0lYfKC0iAkCVdPA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  padding-top: 125px;
 	padding-bottom: 125px;
 	color: white;
 	text-align: center;
@@ -115,21 +115,33 @@ textarea {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
-	margin-top: 150px;
-	margin-bottom: 150px;
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 
 .detailText img{
 	width: 400px;
 }
 
+.detailText3 img{
+  width: 300px;
+}
+
+.detailText3 .wrapper{
+  margin-top: 75px;
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .detailText2{
 	background-image: url("../img/Quut-Scoppi-schep-in-gebruik-strand-scaled.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-transform: uppercase;
-    padding-top: 125px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  padding-top: 125px;
 	padding-bottom: 125px;
 	color: white;
 	text-align: center;

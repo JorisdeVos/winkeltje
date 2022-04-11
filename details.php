@@ -19,7 +19,15 @@
 			</div>
 		</div>
 		<div class="detailText2">
+			<div class="wrapper">
 			<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quidem assumenda debitis unde iusto culpa quae soluta, dignissimos vel corrupti iure repudiandae delectus, exercitationem illo nesciunt necessitatibus ipsam provident minima sint?</p>
+			</div>
+		</div>
+		<div class="detailText3">
+			<div class="wrapper">
+				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Laborum amet vitae deleniti, minus ullam quae magnam ducimus natus quis doloremque, architecto, excepturi odio, placeat. Quaerat sint consectetur itaque sapiente odit.</p>
+				<img src="img/schep.png">
+			</div>
 		</div>
 	</main>
 	<?php require_once 'footer.php';?>
