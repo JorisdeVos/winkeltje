@@ -13,9 +13,10 @@
   <main>
     <?php require_once 'header.php' ?>
     <article id="payment">
+      <p></p>
       <h2>Betaling afronden</h2>
       <div class="wrapper">
-        <span>Selecteer de manier waarop u de bestelling wilt betalen.</span>
+        <h3>Selecteer de manier waarop u de bestelling wilt betalen.</h3>
         <div class="side-by-side">
           <div>
             <a href="javascript:alert('stop');">
