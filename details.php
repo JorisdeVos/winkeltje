@@ -19,7 +19,21 @@
 			</div>
 		</div>
 		<div class="detailText2">
+			<div class="wrapper">
 			<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quidem assumenda debitis unde iusto culpa quae soluta, dignissimos vel corrupti iure repudiandae delectus, exercitationem illo nesciunt necessitatibus ipsam provident minima sint?</p>
+			</div>
+		</div>
+		<div class="detailText3">
+			<div class="wrapper">
+				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Laborum amet vitae deleniti, minus ullam quae magnam ducimus natus quis doloremque, architecto, excepturi odio, placeat. Quaerat sint consectetur itaque sapiente odit.</p>
+				<img src="img/schep.png">
+			</div>
+		</div>
+		<div class="addToCard">
+			<div class="wrapper">
+				<a id="addToCard" href="eee">Naar takenlijst boord</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sit. Dolor odit ipsum ut impedit sit repellat ad nihil non, unde rem temporibus ipsa optio natus exercitationem nisi aperiam. Possimus!</p>
+			</div>
 		</div>
 	</main>
 	<?php require_once 'footer.php';?>
