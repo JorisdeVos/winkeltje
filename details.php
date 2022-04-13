@@ -10,7 +10,17 @@
 	<?php require_once 'header.php';?>
 	<main>
 		<div class="topImage">
-			<p>Product Lorem.</p>
+			<?php 
+				$id = $_GET['id']; 
+				require_once 'backend/conn.php';
+				$query = "SELECT * FROM products WHERE id = :id";
+				$statement = $conn->prepare($query);
+				$statement->execute([":id" => $id]);
+				$products = $statement->fetch(PDO::FETCH_ASSOC);
+       		?>
+
+			
+			<p><?php echo $products['name']; ?></p>
 		</div>
 		<div class="detailText">	
 			<div class="wrapper">
