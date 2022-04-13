@@ -45,15 +45,66 @@
     <div class="bigimg"><img src="img/5464.jpg" /> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellat aliquid cumque accusantium et perferendis quas illo porro explicabo, architecto quisquam fugiat omnis odit deleniti eius dolor? Illum, reiciendis unde? </p></div>
     
     <div class="shovelflex2">
-      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></a></div>
-      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></a></div>
-      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></a></div>
+        <?php
+          $id = "9";
+          require_once 'backend/conn.php';
+          $query = "SELECT * FROM products WHERE id = :id";
+          $statement = $conn->prepare($query);
+          $statement->execute([":id" => $id]);
+          $products = $statement->fetch(PDO::FETCH_ASSOC);
+        ?>
+      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p><?php echo $products['name']; ?></p><p><?php echo $products['description']; ?></p></button></a></div>
+
+
+      
+        <?php
+          $id = "10";
+          require_once 'backend/conn.php';
+          $query = "SELECT * FROM products WHERE id = :id";
+          $statement = $conn->prepare($query);
+          $statement->execute([":id" => $id]);
+          $products = $statement->fetch(PDO::FETCH_ASSOC);
+        ?>
+      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p><?php echo $products['name']; ?></p><p><?php echo $products['description']; ?></p></button></a></div>
+        <?php
+          $id = "11";
+          require_once 'backend/conn.php';
+          $query = "SELECT * FROM products WHERE id = :id";
+          $statement = $conn->prepare($query);
+          $statement->execute([":id" => $id]);
+          $products = $statement->fetch(PDO::FETCH_ASSOC);
+        ?>
+      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p><?php echo $products['name']; ?></p><p><?php echo $products['description']; ?></p></button></a></div>
     </div>
 
     <div class="shovelflex2">
-      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></a></div>
-      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></a></div>
-      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></button></a></div>
+        <?php
+          $id = "12";
+          require_once 'backend/conn.php';
+          $query = "SELECT * FROM products WHERE id = :id";
+          $statement = $conn->prepare($query);
+          $statement->execute([":id" => $id]);
+          $products = $statement->fetch(PDO::FETCH_ASSOC);
+        ?>
+      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p><?php echo $products['name']; ?></p></button></a></div>
+        <?php
+          $id = "13";
+          require_once 'backend/conn.php';
+          $query = "SELECT * FROM products WHERE id = :id";
+          $statement = $conn->prepare($query);
+          $statement->execute([":id" => $id]);
+          $products = $statement->fetch(PDO::FETCH_ASSOC);
+        ?>
+      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p><?php echo $products['name']; ?></p></button></a></div>
+        <?php
+          $id = "14";
+          require_once 'backend/conn.php';
+          $query = "SELECT * FROM products WHERE id = :id";
+          $statement = $conn->prepare($query);
+          $statement->execute([":id" => $id]);
+          $products = $statement->fetch(PDO::FETCH_ASSOC);
+        ?>
+      <div class="shovelflex1"><a href="details.php"><button><img src="img/schep.png" /><p><?php echo $products['name']; ?></p></button></a></div>
     </div>
 
   </div>

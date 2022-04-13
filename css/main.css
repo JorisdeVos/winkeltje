@@ -237,13 +237,13 @@ header{
   }
 
   .bigimg img{
-    width: 986px;
+    width: 1000px;
     height: 327px;
   }
 
   .bigimg{
     box-shadow: 1px 0px 5px #27ae60;
-    width: 986px;
+    width: 1000px;
   }
 
   .shovelflex1 img{
@@ -262,7 +262,7 @@ header{
 
   .shovelflex2{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
 /* ==========================================================================
    Helper classes
