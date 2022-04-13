@@ -31,7 +31,7 @@
 		</div>
 		<div class="addToCard">
 			<div class="wrapper">
-				<a id="addToCard" href="eee">Naar takenlijst boord</a>
+				<a id="addToCard" href="eee">Voeg toe aan je winkelmandje</a>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sit. Dolor odit ipsum ut impedit sit repellat ad nihil non, unde rem temporibus ipsa optio natus exercitationem nisi aperiam. Possimus!</p>
 			</div>
 		</div>
