@@ -18,8 +18,6 @@
 				$statement->execute([":id" => $id]);
 				$products = $statement->fetch(PDO::FETCH_ASSOC);
        		?>
-
-			
 			<p><?php echo $products['name']; ?></p>
 		</div>
 		<div class="detailText">	
