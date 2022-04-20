@@ -237,6 +237,11 @@ header{
     background-color: yellow;
   }
 
+  .footerflex{
+    display: flex;
+    justify-content: center;
+  }
+
   .bigimg img{
     width: 920px;
     height: 327px;
