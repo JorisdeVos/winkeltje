@@ -18,5 +18,5 @@ if(!password_verify($password, $user['password']))
     die("Error: Dit wachtwoord is niet juist!");
 }
 $_SESSION['user_id'] = $user['id'];
-header("location: ../takenlijst.php");
+header("location: ../index.php");
 ?>

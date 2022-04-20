@@ -270,6 +270,40 @@ header{
     justify-content: space-between;
     text-align: center;
   }
+
+  table{
+    text-align: left;
+    table-layout:fixed;
+  }
+  table td {
+    background:#e8edff;
+    border-radius: 10px;
+    margin: 5px;
+    color:#2a2a2a;
+    border-top:1px solid transparent;
+    padding:8px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  
+  tr:nth-child(odd)
+  {
+    background-color:#ebebeb;
+  }
+  tr:first-child
+  {
+    background-color:#d3d3d3;
+  }
+  tr:hover
+  {
+    background-color:#d3d3d3;
+  }
+  td, tr{
+    padding: 5px;
+    text-align: left;
+
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

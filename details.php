@@ -41,7 +41,11 @@
 		</div>
 		<div class="addToCard">
 			<div class="wrapper">
-				<a id="addToCard" href="eee">Voeg toe aan je winkelmandje</a>
+				<form action="backend/mandController.php" method="POST">
+					<input type="submit" value="koop de schep"/> 
+					<input type="number" name="amount">
+					<input type="hidden" name="productId" value="<?php echo $id ?>">
+				</form>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sit. Dolor odit ipsum ut impedit sit repellat ad nihil non, unde rem temporibus ipsa optio natus exercitationem nisi aperiam. Possimus!</p>
 			</div>
 		</div>
