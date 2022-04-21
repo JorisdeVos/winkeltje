@@ -5,6 +5,11 @@ require_once 'conn.php';
 
 $productId = $_POST['productId'];
 $amount = $_POST['amount'];
+if(empty($amount)){
+  die("Je moet er minimaal 1 kopen!");
+}
+
+
 if(empty($_SESSION['basket']))
   $_SESSION['basket'] = array();
 if(empty($_SESSION['amount']))

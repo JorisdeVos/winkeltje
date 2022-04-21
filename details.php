@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/pluk.css">
+	<link rel="stylesheet" href="css/main.css">
 	<title>Document</title>
 </head>
 <body>
@@ -40,11 +40,10 @@
 		<div class="addToCard">
 			<div class="wrapper">
 				<form action="backend/mandController.php" method="POST">
-					<input type="submit" value="koop de schep"/> 
-					<input type="number" name="amount">
+					<input id="forminput" type="number" name="amount" placeholder="Vul hier het aantal in">
+					<input type="submit" value="Koop"/> 
 					<input type="hidden" name="productId" value="<?php echo $id ?>">
 				</form>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sit. Dolor odit ipsum ut impedit sit repellat ad nihil non, unde rem temporibus ipsa optio natus exercitationem nisi aperiam. Possimus!</p>
 			</div>
 		</div>
 	</main>

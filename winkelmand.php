@@ -30,15 +30,15 @@
     require_once('header.php')
   ?>
     <main>
-        <div class="wrapper">
+        <div id="tabel1" class="wrapper">
             <table>
                 <thead>
                     <tr class="solid">
-                        <th>product</th>
-                        <th>prijs</th>
-                        <th>hoeveelheid</th>
-                        <th>totaal prijs product</th>
-                        <th>verwijderen</th>
+                        <th>Product</th>
+                        <th>Prijs</th>
+                        <th>Aantal</th>
+                        <th>Totale Prijs</th>
+                        <th>Verwijder</th>
                     </tr>
                 </thead>
                 <?php foreach($basketNow as $itemNow): ?>
@@ -48,14 +48,18 @@
                         <td><?php echo $itemNow['price']; ?></td>
                         <td><?php echo $amount[$itemCounter]; ?></td>
                         <td><?php echo $amount[$itemCounter]*$itemNow['price']; ?></td>
-                        <td><a href="backend/delete.php?itemId=<?php echo $itemCounter;?>">delete</a></td>
+                        <td><a href="backend/delete.php?itemId=<?php echo $itemCounter;?>">Verwijder</a></td>
                     </tr>
                 </tbody>
                 <?php 
                 $itemCounter++;
                 endforeach; 
                 ?>
+
             </table>
+        </div>
+        <div class="wrapper">
+            
         </div>
     </main>
 </body>
