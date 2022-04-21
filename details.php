@@ -23,8 +23,8 @@
 		<div class="detailText">	
 			<div class="wrapper">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla, aliquam. Quas ducimus sequi officiis eos illum eaque, voluptatem, voluptatibus dolor distinctio nulla, maiores quam, iste nostrum incidunt beatae? Atque.
-				<img src="img/schep.png" alt="">
-			</div>
+				<img src="img/<?php echo $products['img']; ?>">
+			</div>	
 		</div>
 		<div class="detailText2">
 			<div class="wrapper">
@@ -34,7 +34,7 @@
 		<div class="detailText3">
 			<div class="wrapper">
 				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Laborum amet vitae deleniti, minus ullam quae magnam ducimus natus quis doloremque, architecto, excepturi odio, placeat. Quaerat sint consectetur itaque sapiente odit.</p>
-				<img src="img/schep.png">
+				<img src="img/<?php echo $products['img']; ?>">
 			</div>
 		</div>
 		<div class="addToCard">

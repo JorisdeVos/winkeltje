@@ -51,7 +51,7 @@
           $statement->execute([":id" => $id]);
           $products = $statement->fetch(PDO::FETCH_ASSOC);
       ?>
-      <a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/schep.jpg"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
+      <a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/<?php echo $products['img']; ?>"/><p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
     
     <div class="shovelflex2">
         <?php
@@ -62,7 +62,7 @@
           $statement->execute([":id" => $id]);
           $products = $statement->fetch(PDO::FETCH_ASSOC);
         ?>
-      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/bloemen.jpg"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
+      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/<?php echo $products['img']; ?>"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
         <?php
           $id = "3";
           require_once 'backend/conn.php';
@@ -71,7 +71,7 @@
           $statement->execute([":id" => $id]);
           $products = $statement->fetch(PDO::FETCH_ASSOC);
         ?>
-      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/pizza.jpg"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
+      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/<?php echo $products['img']; ?>"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
         <?php
           $id = "4";
           require_once 'backend/conn.php';
@@ -80,7 +80,7 @@
           $statement->execute([":id" => $id]);
           $products = $statement->fetch(PDO::FETCH_ASSOC);
         ?>
-      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/boor.jpg"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
+      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/<?php echo $products['img']; ?>"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
     </div>
 
     <div class="shovelflex2">
@@ -92,7 +92,7 @@
           $statement->execute([":id" => $id]);
           $products = $statement->fetch(PDO::FETCH_ASSOC);
         ?>
-      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/muis.jpg"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
+      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/<?php echo $products['img']; ?>"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
         <?php
           $id = "6";
           require_once 'backend/conn.php';
@@ -101,7 +101,7 @@
           $statement->execute([":id" => $id]);
           $products = $statement->fetch(PDO::FETCH_ASSOC);
         ?>
-      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/keyboard.jpg"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
+      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/<?php echo $products['img']; ?>"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
         <?php
           $id = "7";
           require_once 'backend/conn.php';
@@ -110,7 +110,7 @@
           $statement->execute([":id" => $id]);
           $products = $statement->fetch(PDO::FETCH_ASSOC);
         ?>
-      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/lamp.jpg"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
+      <div class="shovelflex1"><a href="details.php?id=<?php echo $products['id']; ?>"><button><img src="img/<?php echo $products['img']; ?>"/><p><?php echo $products['name']; ?></p><br><p><?php echo $products['description']; ?></p></br></button></a></div>
     </div>
 
 
