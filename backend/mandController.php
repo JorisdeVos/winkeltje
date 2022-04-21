@@ -25,5 +25,5 @@ print_r($mandAmount);
 $_SESSION['basket'] = $mand;
 $_SESSION['amount'] = $mandAmount;
 
-header("location: ../index.php")
+header("location: ../winkelmand.php")
 ?>
