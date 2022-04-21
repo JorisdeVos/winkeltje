@@ -31,6 +31,7 @@
   ?>
     <main>
         <div id="tabel1" class="wrapper">
+            <?php $totalMoney = 0 ?>
             <table>
                 <thead>
                     <tr class="solid">
@@ -49,14 +50,20 @@
                         <td><?php echo $amount[$itemCounter]; ?></td>
                         <td><?php echo $amount[$itemCounter]*$itemNow['price']; ?></td>
                         <td><a href="backend/delete.php?itemId=<?php echo $itemCounter;?>">Verwijder</a></td>
+                        <?php $totalMoney += $amount[$itemCounter]*$itemNow['price'];?>
                     </tr>
                 </tbody>
                 <?php 
                 $itemCounter++;
                 endforeach; 
                 ?>
-
             </table>
+            <div class="confirm">
+                <div class="geenButton">
+                    <p>Totale bedrag:</p>
+                    <?php echo $totalMoney; ?>
+                </div>
+            </div>
         </div>
         <div class="wrapper">
             
