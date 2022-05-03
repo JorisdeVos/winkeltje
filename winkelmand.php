@@ -31,7 +31,11 @@
   ?>
     <main>
         <div id="tabel1" class="wrapper">
-            <?php $totalMoney = 0 ?>
+            <?php 
+            $totalMoney = 0;
+            $productsNames = "Namen: -";
+            $productsAmounts = "Aantal: -";
+            ?>
             <table>
                 <thead>
                     <tr class="solid">
@@ -46,8 +50,10 @@
                 <tbody>			                
                     <tr>
                         <td><?php echo $itemNow['name']; ?></td>
+                        <?php $productsNames .= $itemNow['name'] . "-"; ?>
                         <td><?php echo $itemNow['price']; ?></td>
                         <td><?php echo $amount[$itemCounter]; ?></td>
+                        <?php $productsAmounts .= $amount[$itemCounter] . "-"; ?>
                         <td><?php echo $amount[$itemCounter]*$itemNow['price']; ?></td>
                         <td><a href="backend/delete.php?itemId=<?php echo $itemCounter;?>">Verwijder</a></td>
                         <?php $totalMoney += $amount[$itemCounter]*$itemNow['price'];?>
@@ -63,10 +69,14 @@
                     <p>Totale bedrag:</p>
                     <?php echo $totalMoney; ?>
                 </div>
+                <form action="payment.php" method="POST">
+                    <input type="hidden" name="names" value="<?php echo $productsNames; ?>">
+                    <input type="hidden" name="amount" value="<?php echo $productsAmounts; ?>">
+                <input type="submit" name="submit" value="Betalen">  
+                </form>
             </div>
         </div>
         <div class="wrapper">
-            
         </div>
     </main>
 </body>
