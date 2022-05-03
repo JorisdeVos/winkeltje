@@ -24,8 +24,8 @@
         <div class="side-by-side">
           <div>
                 <form action="backend/paymentController.php" method="POST">
-                    <input type="hidden" name="names" value="<?php echo $productsNames; ?>">
-                    <input type="hidden" name="amount" value="<?php echo $productsAmounts; ?>">
+                    <input type="hidden" name="names" value="<?php echo $names; ?>">
+                    <input type="hidden" name="amount" value="<?php echo $amount; ?>">
                     <input type="hidden" name="method" value="Ideal">
                 <input id="nobuttoneffect" type="submit" name="submit" value="Betalen">  
                 </form>
@@ -34,8 +34,8 @@
           </div>
           <div>
                 <form action="backend/paymentController.php" method="POST">
-                    <input type="hidden" name="names" value="<?php echo $productsNames; ?>">
-                    <input type="hidden" name="amount" value="<?php echo $productsAmounts; ?>">
+                    <input type="hidden" name="names" value="<?php echo $names; ?>">
+                    <input type="hidden" name="amount" value="<?php echo $amount; ?>">
                     <input type="hidden" name="method" value="Visa">
                 <input id="nobuttoneffect" type="submit" name="submit" value="Betalen">  
                 </form>
@@ -44,8 +44,8 @@
           </div>
           <div>
                 <form action="backend/paymentController.php" method="POST">
-                    <input type="hidden" name="names" value="<?php echo $productsNames; ?>">
-                    <input type="hidden" name="amount" value="<?php echo $productsAmounts; ?>">
+                    <input type="hidden" name="names" value="<?php echo $names; ?>">
+                    <input type="hidden" name="amount" value="<?php echo $amount; ?>">
                     <input type="hidden" name="method" value="Mastercard">
                 <input id="nobuttoneffect" type="submit" name="submit" value="Betalen">  
                 </form>
@@ -54,8 +54,8 @@
           </div>
           <div>
                 <form action="backend/paymentController.php" method="POST">
-                    <input type="hidden" name="names" value="<?php echo $productsNames; ?>">
-                    <input type="hidden" name="amount" value="<?php echo $productsAmounts; ?>">
+                    <input type="hidden" name="names" value="<?php echo $names; ?>">
+                    <input type="hidden" name="amount" value="<?php echo $amount; ?>">
                     <input type="hidden" name="method" value="Paypal">
                 <input id="nobuttoneffect" type="submit" name="submit" value="Betalen">  
                 </form>
