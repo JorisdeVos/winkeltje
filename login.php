@@ -5,10 +5,10 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header>
-	</header>
+  <?php require_once 'header.php';?>
 	<main>
 	  <form action="backend/loginController.php" method="POST">
 		  	<div class="form-group">
@@ -22,7 +22,6 @@ session_start();
 		  	<input id="login"type="submit" name="submit" value="login">  
 		</form>
 	</main>
-	<footer>
-	</footer>
+  <?php require_once 'footer.php';?>
 </body>
 </html>

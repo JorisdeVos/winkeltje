@@ -9,7 +9,7 @@
 	    	<?php if(!isset($_SESSION['user_id'])): ?>
 	      	  	<li><a class="menu__item" href="logIn.php">Log in</a></li>
 	      	<?php else: ?>
-	      		<li><a class="menu__item" href="logIn.php">Log out</a></li>
+	      		<li><a class="menu__item" href="logout.php">Log out</a></li>
 	      	<?php endif; ?>
 	      	<?php if(isset($_SESSION['user_id'])): ?>
 	        	<li><a class="menu__item" href="status.php">Status</a></li>
