@@ -10,40 +10,61 @@
 </head>
 
 <body>
-  <?php require_once 'header.php';
-    $query = "SELECT * FROM  WHERE";
-    $statement = $conn->prepare($query);
-    $statement->execute();
-    $todo = $statement->fetchAll(PDO::FETCH_ASSOC);
-  ?>
-  <main>
-  <table>
-    <thead>
-            <tr class="solid">
-                <th>Titel</th>
-        <th>Naam</th>
-        <th>Asignee</th>
-                <th>Bericht</th>
-                <th>Afdeling</th>
-                <th>deadline</th>
-                <th>Gemaakt op</th>
-                <th>Aanpassen</th>
+  <?php require_once 'header.php';?>
+<?php
+            require_once 'backend/conn.php';
+            $query = "SELECT * FROM bestelingen WHERE status = 'Niet verzonden'";
+            $statement = $conn->prepare($query);
+            $statement->execute();
+            $bestelingen = $statement->fetchALL(PDO::FETCH_ASSOC);
+        ?>
+        <div id="tabel1" class="wrapper">
+        <table> 
+            <tr>
+                <th>Producten</th>
+                <th>Aantal</th>
+                <th>Betalingsmethode</th>
+                <th>Status</th>
+                <th>Verzonden maken</th>
             </tr>
-          </thead>
-          <?php foreach($todo as $taken): ?>
-          <tbody>			                <tr>
-                  <?php $id = $taken['id'] ?>
-                  <td><?php echo $taken['titel']; ?></td>
-        <td><?php echo $taken['naam']; ?></td>
-        <td><?php echo $taken['asignee']; ?></td>
-                  <td><?php echo $taken['beschrijving']; ?></td>
-                  <td><?php echo $taken['afdeling']; ?></td>
-                  <td><?php echo $taken['deadline']; ?></td>
-                  <td><?php echo $taken['created_at']; ?></td>
-                  <td><a href="edit.php?id=<?php echo $id;?>">Aanpassen</a></td>
-              </tr>
-          </tbody>
-          <?php endforeach; ?>
-      </table>
+            <?php foreach($bestelingen as $besteling): ?>
+                <tr>
+                    <td><?php echo $besteling['producten'];?></td>
+                    <td><?php echo $besteling['aantal'];?></td>
+                    <td><?php echo $besteling['method'];?></td>
+                    <td><?php echo $besteling['status'];?></td>
+                    <td><a href="backend/bestelingVoldaan.php?id=<?php echo $besteling['id']; ?>">Verzonden maken</a></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+      </div>
+<?php
+            require_once 'backend/conn.php';
+            $query = "SELECT * FROM bestelingen WHERE status = 'Verzonden'";
+            $statement = $conn->prepare($query);
+            $statement->execute();
+            $bestelingen = $statement->fetchALL(PDO::FETCH_ASSOC);
+        ?>
+        <div id="tabel1" class="wrapper">
+        <table> 
+            <tr>
+                <th>Producten</th>
+                <th>Aantal</th>
+                <th>Betalingsmethode</th>
+                <th>Status</th>
+            </tr>
+            <?php foreach($bestelingen as $besteling): ?>
+                <tr>
+                    <td><?php echo $besteling['producten'];?></td>
+                    <td><?php echo $besteling['aantal'];?></td>
+                    <td><?php echo $besteling['method'];?></td>
+                    <td><?php echo $besteling['status'];?></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+      </div>
   </main>
+  <footer id="footerMargin">
+    <?php require_once 'footer.php';?>
+  </footer>
 </body>

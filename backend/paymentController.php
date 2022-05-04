@@ -1,9 +1,9 @@
 <?php
-
+session_start();
     $names = $_POST['names'];
     $amount = $_POST['amount'];
     $method = $_POST['method'];
-    $status = 'Niet voldaan';
+    $status = 'Niet verzonden';
     require_once 'conn.php';
     $query = "INSERT INTO bestelingen (producten, aantal, method, status)
     VALUES(:producten, :aantal, :method, :status)";
