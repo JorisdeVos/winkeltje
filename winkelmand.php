@@ -66,7 +66,7 @@
             </table>
             <div class="confirm">
                 <div class="geenButton">
-                    <p>Totale bedrag:</p>
+                    <p>Totaalbedrag:</p>
                     <?php echo $totalMoney; ?>
                 </div>
                 <form action="payment.php" method="POST">
