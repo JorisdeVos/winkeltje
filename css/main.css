@@ -246,13 +246,9 @@ h3{
 
 header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: yellow;
-}
-
-#imgheader img{
-  margin-right: 200px;
 }
 
 h1{
